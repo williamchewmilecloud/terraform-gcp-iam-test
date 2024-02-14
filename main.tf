@@ -1,7 +1,3 @@
-provider "google" {
-  project = "sea-rd-interview-lab"
-}
-
 resource "google_service_account" "appone" {
   account_id   = "appone"
   display_name = "App One Service Account"
