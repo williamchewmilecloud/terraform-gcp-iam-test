@@ -31,3 +31,29 @@ resource "google_project_iam_binding" "appone_storage_admin" {
   role    = "roles/storage.admin"
   members = ["serviceAccount:${google_service_account.appone.email}"]
 }
+
+#For Task 2 and 3
+#resource "google_service_account" "app" {
+#  for_each     = var.service_accounts
+#  account_id   = each.value.account_id
+#  display_name = each.value.display_name
+#  project      = var.project_id
+#}
+
+#For Task 2
+#resource "google_project_iam_binding" "app_binding" {
+#  for_each = ...
+#
+#  project = var.project_id
+#  role    = ....
+#  members = [for sa in google_service_account.app : "......"]
+#}
+
+#For Task 3
+#resource "google_project_iam_member" "app_member" {
+#  for_each = ...
+#
+#  project = var.project_id
+#  role = ....
+#  member = "serviceAccount:...."
+#}
