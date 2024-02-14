@@ -1,0 +1,23 @@
+variable "project_id" {
+  description = "The project ID"
+  type        = string
+  default     = "sea-rd-interview-lab"
+}
+
+variable "service_account_id" {
+  description = "The service account ID"
+  type        = string
+  default     = "appone"
+}
+
+variable "service_account_display_name" {
+  description = "The display name for the service account"
+  type        = string
+  default     = "App One Service Account"
+}
+
+variable "iam_roles" {
+  description = "A list of IAM roles to assign"
+  type        = XXXX(XXXXX)
+  default     = XXXXXXXX
+}
