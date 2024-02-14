@@ -1,0 +1,22 @@
+project_id = "sea-rd-interview-lab"
+
+service_accounts = {
+  appone = {
+    display_name = "App One Service Account"
+    roles = [
+      "roles/cloudbuild.serviceAgent",
+      "roles/cloudfunctions.invoker",
+      "roles/cloudscheduler.serviceAgent",
+      "roles/storage.admin",
+    ]
+  },
+  apptwo = {
+    display_name = "App Two Service Account"
+    roles = [
+      "roles/cloudbuild.serviceAgent",
+      "roles/cloudfunctions.invoker",
+      "roles/cloudscheduler.serviceAgent",
+      "roles/storage.admin",
+    ]
+  }
+}
